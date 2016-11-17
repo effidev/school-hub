@@ -11,6 +11,9 @@ rvm:
 before_script:
   - cp config/database.travis.yml config/database.yml
   - bundle install
-  - bin/rake db:create
-  - bin/rake db:migrate
-  - bin/rake db:seed
+
+script:
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
+  - bundle exec rake db:seed
+  - bundle exec rspec
