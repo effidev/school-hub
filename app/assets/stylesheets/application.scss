@@ -16,3 +16,15 @@
 
 @import "_bootstrap-sprockets.scss";
 @import "bootstrap";
+
+body {
+  background-color: #f8f8f8;
+
+  &> .header {
+    padding-top: 60px;
+  }
+}
+
+.clear {
+  clear: both;
+}
