@@ -1,4 +1,5 @@
-#/ /!\ Never push this config file
+# Default example to config your database.
+# Copy it to database.yml
 # Edit to allow rails to connect to your database (username, password ...)
 
 default: &default
