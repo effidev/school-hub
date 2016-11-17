@@ -1,0 +1,11 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  database: school-hub-test
+  username:
+  encoding: utf8
+
+test:
+  <<: *default
+  database: school-hub-test
