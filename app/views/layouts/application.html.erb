@@ -8,7 +8,38 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="header">
+  <nav class="navbar navbar-default navbar-fixed-top" style="padding: 8px 0;">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to(PARAMETERS['site_name'], :home, :class => 'navbar-brand') %>
+      </div>
+
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <%# left menu %>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <% if current_user %>
+            <%= link_to_navbar(t('logout'), :destroy_user_session, :delete) %>
+          <% else %>
+            <%= link_to :new_user_session do %>
+              <button type="button" class="btn btn-default navbar-btn"><%= t('sign_in') %></button>
+            <% end %>
+              <%= link_to :new_user_registration do %>
+                  <button type="button" class="btn btn-default navbar-btn btn-primary"><%= t('sign_up') %></button>
+              <% end %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="content">
+  <%= yield %>
+</div>
 
 </body>
 </html>
