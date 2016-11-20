@@ -1,29 +1,47 @@
-<h2>Sign up</h2>
+<div class="devise">
+  <div class="registration-block">
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <%# devise_error_messages! %>
+        <div class="field">
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name, autofocus: true, class: 'input' %>
+          <em><span class="error"><%= resource.errors[:first_name].first %></span></em>
+        </div>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+        <div class="field">
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name, class: 'input' %>
+          <em><span class="error"><%= resource.errors[:last_name].first %></span></em>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="field">
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'input' %>
+          <em><span class="error"><%= resource.errors[:email].first %></span></em>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %>
+          <% if @minimum_password_length %> <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %>
+          <%= f.password_field :password, autocomplete: "off", class: 'input' %>
+          <em><span class="error"><%= resource.errors[:password].first %></span></em>
+        </div>
+
+        <div class="field">
+          <%= f.label :password_confirmation %>
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'input' %>
+          <i><span class="error"><%= resource.errors[:password_confirmation].first %></span></i>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="actions col-xs-12">
+        <%= f.submit t('sign_up'), id: 'sign-up-id', class: 'input-register btn btn-green' %>
+      </div>
+      <div class="clear"></div>
+    <% end %>
   </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up", id: 'sign-up-id' %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

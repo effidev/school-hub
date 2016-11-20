@@ -20,9 +20,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  home: Home
-  account: Account
-  about: About
-  logout: Logout
-  sign_up: Sign up
-  sign_in: Sign in
+  home: "Home"
+  account: "Account"
+  about: "About"
+  logout: "Logout"
+  sign_up: "Sign up"
+  sign_in: "Sign in"
+  welcome: "Welcome"
+  settings: "Settings"
