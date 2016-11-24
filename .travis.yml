@@ -17,3 +17,6 @@ script:
   - bundle exec rake db:migrate
   - bundle exec rake db:seed
   - bundle exec rspec
+
+notifications:
+  slack: school-hub:TNrUT0Q5y86LmY9ElXuAnsDQ

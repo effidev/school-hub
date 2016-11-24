@@ -7,11 +7,4 @@ module ApplicationHelper
       ''
     end
   end
-
-  def link_to_navbar(name, route, method)
-    html = '<li class="'<< active_page(route) << '">'
-    html << link_to(name, route, method: method)
-    html << '</li>'
-    html.html_safe
-  end
 end

@@ -1,7 +1,9 @@
 fr:
-  home: Accueil
-  account: Compte
-  about: À propos
-  logout: Déconnexion
-  sign_up: S'inscrire
-  sign_in: Se connecter
+  home: "Accueil"
+  account: "Compte"
+  about: "À propos"
+  logout: "Déconnexion"
+  sign_up: "S'inscrire"
+  sign_in: "Se connecter"
+  welcome: "Bienvenue"
+  settings: "Paramètres"

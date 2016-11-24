@@ -26,9 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
-# devise (user system)
+# custom_devise (user system)
 gem 'devise'
-# devise i18n translation
+# custom_devise i18n translation
 gem 'devise-i18n'
 
 # Use ActiveModel has_secure_password

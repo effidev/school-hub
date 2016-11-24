@@ -1,0 +1,19 @@
+<div class="account">
+  <div class="container">
+    <div class="row">
+      <div class="hidden-xs col-lg-2 col-md-3 col-sm-4">
+        <div class="user">
+          <%= image_tag('default_user.png', class: 'user-image') %>
+          <h4><%= current_user.first_name %></h4>
+        </div>
+      </div>
+
+
+      <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+          <%= yield %>
+      </div>
+
+    </div>
+  </div>
+</div>
+<%= parent_layout 'application' %>

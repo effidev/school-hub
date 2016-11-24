@@ -1,0 +1,50 @@
+.devise {
+  margin-top: 200px;
+
+  .connection-block, .forget-password-block, .registration-block {
+    margin: 10px auto;
+
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid rgb(219, 219, 219);
+  }
+
+  .connection-block {
+    width: 350px;
+  }
+
+  .field {
+    margin-bottom: 20px;
+  }
+
+  .field_with_errors {
+    &>input {
+      border-color: red;
+    }
+  }
+
+  .forget-password-block {
+    width: 380px;
+  }
+
+  .input {
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .input-register {
+    float: right;
+  }
+
+  .register {
+    text-align: center;
+  }
+
+  .registration-block {
+    width: 700px;
+    max-width: 100%;
+  }
+}

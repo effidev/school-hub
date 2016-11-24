@@ -1,0 +1,36 @@
+fr:
+  activerecord:
+    attributes:
+      user:
+        first_name: "Prénom"
+        last_name: "Nom"
+        first_name.too_short: 'Trop court'
+    errors:
+      models:
+        user:
+          attributes:
+            first_name:
+              too_short: "Trop court (minimum %{count} caractères)"
+              too_long: "Trop long (maximum %{count} caractères)"
+            last_name:
+              too_short: "Trop court (minimum %{count} caractères)"
+              too_long: "Trop long (maximum %{count} caractères)"
+            email:
+              taken: "Déjà prise"
+              blank: "Une adresse mail est nécessaire"
+              too_short: "Trop court (minimum %{count} caractères)"
+            password:
+              blank: "Ne peut pas être vide"
+              too_short: "Trop court (minimum %{count} caractères)"
+              too_long: "Trop long (maximum %{count} caractères)"
+            password_confirmation:
+              confirmation: "Mots de passe différents"
+
+  devise:
+    update: "Mettre à jour"
+    new_at: "Nouveau sur"
+    passwords:
+      forgot_password: "Mot de passe oublié?"
+      blank_for_no_update: "laissez vide si vous ne voulez pas changer"
+    registrations:
+      create_account: "Créer un compte"

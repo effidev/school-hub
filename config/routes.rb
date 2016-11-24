@@ -1,10 +1,23 @@
 Rails.application.routes.draw do
 
   scope '(:locale)', locale: /fr|en/ do
-    devise_for :users
+    # devise_for :users, :controllers => { registrations: 'custom_devise/registrations' }
     root 'home#index', as: :home
 
+    devise_for :users, path: 'account', :controllers => { registrations: 'custom_devise/registrations' }, path_name: {
+        sign_up: 'sign-up',
+        sign_out: 'logout',
+        sign_in: 'login'
+    }
+
     resource :home
+
+    scope 'account', module: 'account' do
+      resources :profile
+
+        # match 'signout', to: 'devise/sessions#destroy', as: :destroy_user_session, via: Devise.mappings[:user].sign_out_via
+        #
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
