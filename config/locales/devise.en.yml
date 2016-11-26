@@ -6,6 +6,8 @@ en:
       user:
         first_name: "Firstname"
         last_name: "Lastname"
+        first_name.too_short: 'Too short'
+        color: "Couleur du profil"
   devise:
     update: "Update"
     new_at: "New at"

@@ -11,6 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.minicolors
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
+
+jQuery( function($) {
+    $(".colorpicker").minicolors()
+});
