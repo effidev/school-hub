@@ -7,7 +7,7 @@ en:
         first_name: "Firstname"
         last_name: "Lastname"
         first_name.too_short: 'Too short'
-        color: "Couleur du profil"
+        color: "Profile's color"
   devise:
     update: "Update"
     new_at: "New at"
