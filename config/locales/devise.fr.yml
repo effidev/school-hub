@@ -5,6 +5,7 @@ fr:
         first_name: "Prénom"
         last_name: "Nom"
         first_name.too_short: 'Trop court'
+        color: "Couleur du profil"
     errors:
       models:
         user:

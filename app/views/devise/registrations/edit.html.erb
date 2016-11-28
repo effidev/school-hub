@@ -7,6 +7,12 @@
           <% end %>
 
           <%# devise_error_messages! %>
+
+          <div class="field">
+            <%= f.label :color %>
+            <%= f.text_field :color, autofocus: true , class: 'colorpicker hidden' %>
+          </div>
+
           <div class="field">
             <%= f.label :first_name %>
             <%= f.text_field :first_name, autofocus: true, class: 'input' %>

@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery.minicolors
  */
 
 @import "_bootstrap-sprockets.scss";
@@ -33,6 +34,21 @@ body {
   &> .header {
     padding-top: 60px;
     margin-bottom: 6px;
+  }
+
+  div#navbar {
+    ul.navbar-right {
+      margin: 0;
+    }
+
+    ul li a.dropdown-toggle {
+      color: whitesmoke;
+      border-radius: 50%;
+      border: 1px solid #e7e7e7;
+    }
+  }
+  a.navbar-brand {
+    margin-left: 25px;
   }
 }
 
