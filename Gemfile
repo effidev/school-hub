@@ -32,6 +32,9 @@ gem 'devise'
 # custom_devise i18n translation
 gem 'devise-i18n'
 
+# CarrierWave to upload pictures
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -59,4 +62,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-

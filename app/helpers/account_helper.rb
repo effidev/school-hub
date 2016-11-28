@@ -11,4 +11,12 @@ module AccountHelper
 
     html.html_safe
   end
+
+  def user_avatar user
+    if user.avatar.present?
+      image_tag current_user.avatar
+    else
+      image_tag('default_user.png', class: 'user-image')
+    end
+  end
 end

@@ -43,3 +43,6 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# We don't want to add every avatar of the world
+/public/uploads/*
