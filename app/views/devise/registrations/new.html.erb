@@ -42,6 +42,10 @@
           <%= f.password_field :password_confirmation, autocomplete: "off", class: 'input' %>
           <i><span class="error"><%= resource.errors[:password_confirmation].first %></span></i>
         </div>
+
+        <div class="form-group">
+          <%= f.file_field :avatar, multiple: false %>
+        </div>
       </div>
       <div class="clear"></div>
       <div class="actions col-xs-12">

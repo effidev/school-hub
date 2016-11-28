@@ -30,25 +30,32 @@
 
 body {
   background-color: #f8f8f8;
-
   &> .header {
     padding-top: 60px;
     margin-bottom: 6px;
   }
-
-  div#navbar {
+  div.user-menu {
     ul.navbar-right {
       margin: 0;
     }
-
     ul li a.dropdown-toggle {
       color: whitesmoke;
-      border-radius: 50%;
+      border-radius: 10%;
       border: 1px solid #e7e7e7;
     }
   }
+  a:hover {
+    color: grey;
+  }
   a.navbar-brand {
     margin-left: 25px;
+  }
+  a img {
+    width: 62px;
+    height: auto;
+    position: absolute;
+    margin: -22px;
+    padding-right: 0px;
   }
 }
 

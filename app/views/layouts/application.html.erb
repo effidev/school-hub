@@ -15,7 +15,7 @@
         <%= link_to(PARAMETERS['site_name'], :home, :class => 'navbar-brand') %>
       </div>
 
-      <div id="navbar" class="collapse navbar-collapse">
+      <div id="navbar" class="collapse navbar-collapse user-menu">
         <ul class="nav navbar-nav">
         </ul>
 
@@ -24,7 +24,7 @@
             <li>
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                  aria-expanded="false" style="background-color: <%= current_user.color %>;">
-                <%= current_user.first_name[0,1] %>
+                <%= user_avatar current_user %>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
